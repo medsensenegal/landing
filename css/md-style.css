@@ -1,23 +1,7 @@
 
-@media (min-width: 768) { 
+@media (min-width: 768px) { 
     header {
-        position: fixed;
-        width: 100%;
-        top: 0;
-        right: 0;
-        z-index: 1;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
         background-color: transparent;
-        padding: 28px 12%;
-        transition: all .50s ease;
-    
-    }
-    
-    .logo {
-        display: flex;
-        align-items: center;
     }
     
     .logo  img {
@@ -26,7 +10,7 @@
     
     .navbar {
         display: flex;
-    
+        position: initial;
     }
     
     .navbar a {
@@ -48,10 +32,5 @@
     
     .menu {
         display: none;
-    }
-    
-    .menu img {
-        height: 30px;
-        width: 30px;
     }
 }
