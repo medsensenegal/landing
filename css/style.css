@@ -1,3 +1,5 @@
+@import url(sm-style.css);
+
 *{
     padding: 0;
     margin: 0;
@@ -15,4 +17,16 @@
     --dark: #95B0B5;
     --darker: #3D5E72;
     --darkest: #21323E;
+    --sm: 640;
+    --md: 768;
+    --lg: 1024;
+    --xl: 1280;
 }
+
+
+body {
+    min-height: 100vh;
+    background-color: var(--lightest);
+    color: var(--darker);
+}
+
