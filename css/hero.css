@@ -1,0 +1,69 @@
+/* .hero {
+    margin-top: 10vh;
+    background-image: url(../assets/stethoscope.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 90vh;
+    width: 100%;
+    display: flex;
+}
+
+.hero .curve {
+    background-image: url(../assets/hero-side-bg.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+} */
+.hero {
+    margin-top: 10vh;
+    background-color: var(--lightest);
+    height: 90vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.hero .content {
+    margin-top: 5vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.hero .content h1{
+    font-size: 2rem;
+    color: var(--primary);
+}
+
+.hero .content p{
+    font-size: 1.2rem;
+    color: var(--darker);
+    padding: 5% 12% ;
+    text-align: center;
+}
+
+.hero .content .action{
+    display: flex;
+    align-items: center;
+}
+
+.hero .content .action .more,
+.hero .content .action .contact{
+    border-radius: 30px;
+    color: var(--lightest);
+    background: var(--primary);
+    padding: 10px;
+    width: 160px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+    font-size: 1.2rem;
+}
+
+.hero .content .action .contact{
+    background: var(--darker);
+}
