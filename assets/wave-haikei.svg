@@ -1,0 +1,13 @@
+<svg id="visual" viewBox="0 0 900 600" width="900" height="600" xmlns="http://www.w3.org/2000/svg"
+    xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
+    <defs>
+        <pattern id="stethoscope" patternUnits="userSpaceOnUse" width="100" height="100">
+            <image href="stethoscope.jpg" x="0" y="0" width="100" height="100" />
+        </pattern>
+    </defs>
+    <rect id="rect" x="0" y="0" width="900" height="600" fill="#009344"></rect>
+    <path
+        d="M376 0L387.7 25C399.3 50 422.7 100 473.2 150C523.7 200 601.3 250 618.8 300C636.3 350 593.7 400 553 450C512.3 500 473.7 550 454.3 575L435 600L0 600L0 575C0 550 0 500 0 450C0 400 0 350 0 300C0 250 0 200 0 150C0 100 0 50 0 25L0 0Z"
+        fill="#FFFFFF" stroke-linecap="round" stroke-linejoin="miter"
+        ></path>
+</svg>

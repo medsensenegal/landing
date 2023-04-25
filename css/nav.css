@@ -57,7 +57,7 @@ header {
 @media (max-width: 940px) {
     .navbar {
         position: fixed;
-        top: 120px;
+        top: 10vh;
         left: -100%;
         background: var(--primary);
         height: 100vh;

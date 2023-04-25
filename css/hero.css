@@ -25,8 +25,7 @@
 }
 
 .hero .content {
-    flex: 0.4;
-    margin-top: 5vh;
+    flex: 0.6;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -36,11 +35,19 @@
 .hero .content h1{
     font-size: 2rem;
     color: var(--primary);
+    text-align: center;
+}
+
+.hero .content h2{
+    font-size: 1.5rem;
+    color: var(--daker);
+    padding: 3% 10% ;
+    text-align: center;
 }
 
 .hero .content p{
-    font-size: 1.2rem;
-    color: var(--darker);
+    font-size: 1rem;
+    color: var(--dark);
     padding: 5% 12% ;
     text-align: center;
 }
@@ -52,12 +59,12 @@
 
 .hero .content .action .more,
 .hero .content .action .contact{
-    border-radius: 30px;
+    border-radius: 20px;
     color: var(--lightest);
     background: var(--primary);
     padding: 10px;
-    width: 160px;
-    height: 50px;
+    width: 130px;
+    height: 40px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -70,12 +77,15 @@
 }
 
 .hero .curve {
-    flex: 0.6;
-    margin-top: 5vh;
-    background-color: var(--primary);
+    flex: 0.4;
+    min-height: 30vh;
+    /* background-image: url(../assets/doctor.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover; */
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
 }
 
 
@@ -87,20 +97,20 @@
 .hero .curve .playBtn{
     position: absolute;
     right: 50%;
-    top: 52%;
+    top: 60%;
     background-color: var(--lightest);
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
     z-index: 1;
-    transform: translate(50%, -50%);
+    transform: translate(50%, -20%);
     animation: breath 2s linear infinite;
 }
 
 @keyframes breath {
     0% {
-        box-shadow: 0 0 0 15px var(--primary);
+        box-shadow: 0 0 0 15px var(--secondary);
     }
 }
 
@@ -116,5 +126,17 @@
     height: 300px;
     width: 100%;
     object-fit: cover;
+}
+
+@media (min-width: 768px) {
+    .hero {
+        flex-direction: row;
+    }
+    .hero .curve .playBtn{
+        position: absolute;
+        right: 36%;
+        top: 55%;
+        /* transform: translate(40%, -20%); */
+    }
 }
 
