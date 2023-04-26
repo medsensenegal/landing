@@ -10,6 +10,8 @@
 :root{
     --primary: #009344;
     --secondary: #8CC73E;
+    --secondary-light: #B0D97B;
+    --secondary-dark: #628E29;
     --lightest: #FFFFFF;
     --light: #F8FFF8;
     --dark: #95B0B5;
