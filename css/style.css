@@ -285,6 +285,7 @@ a:focus {
 .slider_section .detail-box h1 {
   color: #009344;
   font-weight: 600;
+  font-size: 2.5rem;
 }
 
 .slider_section .detail-box h1 span {
@@ -457,7 +458,7 @@ a:focus {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  bottom: -150px;
+  bottom: -70px;
 }
 
 .slider_section .carousel-indicators li {
