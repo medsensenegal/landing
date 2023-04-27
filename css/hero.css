@@ -7,41 +7,50 @@
     flex-direction: column;
 }
 
+
 .hero .content {
-    flex: 0.6;
+    display: flex;
+    flex: 0.4;
+    align-items: center;
+    justify-content: center;
+    background: rgb(232,246,208);
+    background: linear-gradient(90deg, rgba(232,246,208,1) 0%, rgba(255,255,255,1) 100%, rgba(255,255,255,1) 100%);
+}
+
+.hero .content .content-info {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
 }
 
-.hero .content h1{
+.hero .content .content-info h1{
     font-size: 2rem;
     color: var(--primary);
     text-align: center;
 }
 
-.hero .content h2{
+.hero .content .content-info h2{
     font-size: 1.5rem;
     color: var(--daker);
     padding: 3% 10% ;
     text-align: center;
 }
 
-.hero .content p{
+.hero .content .content-info p{
     font-size: 1rem;
-    color: var(--dark);
+    color: var(--secondary-dark);
     padding: 5% 12% ;
     text-align: center;
 }
 
-.hero .content .action{
+.hero .content .content-info .action{
     display: flex;
     align-items: center;
 }
 
-.hero .content .action .more,
-.hero .content .action .contact{
+.hero .content .content-info .action .more,
+.hero .content .content-info .action .contact{
     border-radius: 20px;
     color: var(--lightest);
     background: var(--primary);
@@ -55,18 +64,25 @@
     font-size: 1.2rem;
 }
 
-.hero .content .action .contact{
+.hero .content .content-info .action .contact{
     background: var(--darker);
 }
 
 .hero .curve {
-    flex: 0.4;
-    min-height: 30vh;
     display: flex;
     align-items: center;
     justify-content: flex-start;
+    flex: 0.6;
 }
 
+.hero .curve .wave {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-image: url(../assets/Vector.svg);
+    width: 320px;
+    height: 100%;
+}
 
 .hero .curve .playBtn {
     height: 70px;
@@ -87,17 +103,32 @@
 }
 
 .hero .curve .imgBox {
-    padding: 10px;
+    width: 100%;
+    height: 100%;
+    background-color: var(--primary);
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 50vmin;
-    overflow: hidden;
+}
+
+/* .hero .curve .curve-info {
+    background-color: var(--primary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+}
+
+.hero .curve .imgBox {
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 
 .hero .curve .imgBox .wrapper {
-    width: 100%;
     display: flex;
     animation: slide 16s infinite;
 }
@@ -105,7 +136,7 @@
 
 .hero .curve .imgBox .wrapper img {
     width: 100%;
-}
+} */
 
 
 @keyframes breath {
@@ -145,22 +176,49 @@
     .hero {
         flex-direction: row;
     }
-    .hero .curve {
-        justify-content: flex-end;
-    }
     .hero .curve .playBtn{
         position: absolute;
-        right: 33%;
-        top: 53%;
+        right: 43%;
+        top: 45%;
     }
 
-    .hero .curve .imgBox {
-        padding: 10px;
+    /* .hero .curve .imgBox {
         display: flex;
         align-items: center;
         justify-content: center;
-        width: 25vw;
         overflow: hidden;
+        width: 15vw;
+    } */
+
+    
+
+    .hero .curve .imgBox img {
+        height: 70vh;
+    }
+
+}
+
+@media (min-width: 970px) {
+    .hero .curve .playBtn{
+        position: absolute;
+        right: 46%;
+        top: 43%;
     }
 }
 
+@media (min-width: 1024px) {
+    .hero .curve .playBtn{
+        position: absolute;
+        right: 46%;
+        top: 43%;
+    }
+}
+
+
+@media (min-width: 1280px) {
+    .hero .curve .playBtn{
+        position: absolute;
+        right: 46%;
+        top: 43%;
+    }
+}
