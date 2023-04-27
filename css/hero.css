@@ -1,7 +1,7 @@
 .hero {
     margin-top: 10vh;
     background-color: var(--lightest);
-    height: 90vh;
+    min-height: 100vh;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -9,12 +9,13 @@
 
 
 .hero .content {
+    padding-top: 5vh;
     display: flex;
-    flex: 0.4;
+    flex: 0.5;
     align-items: center;
     justify-content: center;
     background: rgb(232,246,208);
-    background: linear-gradient(90deg, rgba(232,246,208,1) 0%, rgba(255,255,255,1) 100%, rgba(255,255,255,1) 100%);
+    background: linear-gradient(180deg, rgba(232,246,208,1) 0%, rgba(255,255,255,1) 100%);
 }
 
 .hero .content .content-info {
@@ -28,6 +29,7 @@
     font-size: 2rem;
     color: var(--primary);
     text-align: center;
+    font-weight: 500;
 }
 
 .hero .content .content-info h2{
@@ -72,27 +74,28 @@
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    flex: 0.6;
+    flex: 0.5;
+    flex-direction: column;
 }
 
 .hero .curve .wave {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    background-image: url(../assets/Vector.svg);
-    width: 320px;
-    height: 100%;
+    background-image: url(../assets/Vector-mobile.svg);
+    width: 100%;
+    height: 25vh;
 }
 
 .hero .curve .playBtn {
-    height: 70px;
-    width: 70px;
+    height: 50px;
+    width: 50px;
 }
 
 .hero .curve .playBtn{
     position: absolute;
-    right: 48%;
-    top: 65%;
+    right: 55%;
+    top: 60%;
     background-color: var(--lightest);
     border-radius: 50%;
     display: flex;
@@ -102,6 +105,13 @@
     animation: breath 2s linear infinite;
 }
 
+
+
+.hero .curve .playBtn img {
+    height: 20px;
+    width: 16px;
+}
+
 .hero .curve .imgBox {
     width: 100%;
     height: 100%;
@@ -109,6 +119,10 @@
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.hero .curve .imgBox img {
+    height: 35vh;
 }
 
 /* .hero .curve .curve-info {
@@ -175,13 +189,42 @@
 @media (min-width: 768px) {
     .hero {
         flex-direction: row;
+        height: 90vh;
+        min-height: 90vh;
     }
+    .hero .content {
+        flex: 0.4;
+        background: rgb(232,246,208);
+        background: linear-gradient(90deg, rgba(232,246,208,1) 0%, rgba(255,255,255,1) 100%);    
+    }
+
+    .hero .curve {
+        flex: 0.6;
+        flex-direction: row;
+    }
+
+    .hero .curve .playBtn {
+        height: 70px;
+        width: 70px;
+    }
+
+    
     .hero .curve .playBtn{
         position: absolute;
         right: 43%;
         top: 45%;
     }
 
+    .hero .curve .playBtn img {
+        height: 28px;
+        width: 22px;
+    }
+
+    .hero .curve .wave {
+        background-image: url(../assets/Vector.svg);
+        width: 320px;
+        height: 100%;
+    }
     /* .hero .curve .imgBox {
         display: flex;
         align-items: center;
@@ -189,8 +232,6 @@
         overflow: hidden;
         width: 15vw;
     } */
-
-    
 
     .hero .curve .imgBox img {
         height: 70vh;
