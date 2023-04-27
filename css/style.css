@@ -57,7 +57,7 @@ body {
 /*header section*/
 .hero_area {
   height: 100vh;
-  background-image: url(../images/Frame1.png);
+  background-image: url(../images/Frame2.png);
   background-size: cover;
   position: relative;
   background-repeat: no-repeat;
@@ -276,9 +276,14 @@ a:focus {
           align-items: center;
 }
 
+.slider_section .detail-box {
+  color: #21323E;
+  background: linear-gradient(90deg , #E8F6D0, transparent);
+  padding: 10px;
+}
+
 .slider_section .detail-box h1 {
   color: #009344;
-  /* text-transform: uppercase; */
 }
 
 .slider_section .detail-box h1 span {
@@ -609,6 +614,7 @@ a:focus {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+
 }
 
 .discount_section .detail-box h2 {
