@@ -167,7 +167,6 @@ a:focus {
 }
 
 .navbar-brand {
-  margin-right: 5%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -278,7 +277,8 @@ a:focus {
 
 .slider_section .detail-box {
   color: #21323E;
-  background: linear-gradient(90deg , #E8F6D0, transparent);
+  /* background: linear-gradient(90deg , #E8F6D0 0%, #E8F6D0 20%,transparent 100%); */
+  background-color: rgba(232, 246, 208, 0.7);
   padding: 10px;
 }
 
