@@ -25,6 +25,7 @@
     overflow-x: clip;
 }
 
+
 .header-wave {
     position: absolute;
     top: 0;
@@ -47,7 +48,6 @@
 }
 
 .header-eight .header-image {
-    border-radius: 0;
     display: flex;
     align-items: center;
     justify-content: flex-end;
@@ -121,9 +121,9 @@
     border-color: var(--darker)
 }
 
-.header-eight .video-button {
-    display: inline-flex;
-    align-items: center;
+
+.header-eight .header-content .button .video-button {
+    display: none;
 }
 
 .header-eight .play_btn{
@@ -162,17 +162,24 @@
 
 @media only screen and (min-width:768px) and (max-width:991px) {
     .header-eight {
-        padding: 130px 0 80px
+        padding: 100px 0 80px
     }
-}
-
-@media(max-width:767px) {
-    .header-eight {
-        padding: 100px 0 60px
+    .header-eight .header-wave {
+        display: none;
     }
-}
 
-@media only screen and (min-width:768px) and (max-width:991px) {
+    .header-eight .hero-slide {
+        padding-left: 5vw;
+    }
+
+    .header-eight .play_btn {
+        display: none;
+    }
+    .header-eight .header-content .button .video-button {
+        margin-top: 30px;
+        display: inline-flex;
+        align-items: center;
+    }
     .header-eight .header-content h1 {
         font-size: 35px;
         line-height: 45px
@@ -182,17 +189,14 @@
 @media(max-width:767px) {
     .header-eight .header-content h1 {
         font-size: 30px;
-        line-height: 42px
+        line-height: 42px;
+        padding: 100px 0 60px
     }
-}
-  
-
-@media(max-width:767px) {
     .header-eight .video-button {
         margin-top: 20px
     }
 }
-
+  
 @keyframes breath {
     0% {
         box-shadow: 0 0 0 15px var(--primary);
