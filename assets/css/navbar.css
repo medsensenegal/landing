@@ -410,7 +410,20 @@ only screen and (min-width:1400px) {
 }
 
 .navbar-area.navbar-nine .navbar .navbar-btn {
-    margin-top: 6px
+    margin-top: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar-area.navbar-nine .navbar .navbar-btn .text{
+    margin-left: 10px;
+    color: var(--white);
+    opacity: 0.5;
+}
+
+.navbar-area.navbar-nine .navbar .navbar-btn:hover .text{
+    opacity: 1;
 }
 
 @media only screen and (min-width:768px) and (max-width:991px) {
@@ -448,22 +461,11 @@ only screen and (min-width:1400px) {
     transition: all .3s ease-out 0s
 }
 
-/* .navbar-area.navbar-nine.top .navbar .navbar-btn .menu-bar {
-    color: var(--darker);
-    border: 1px solid var(--darker);
-} */
-
-.navbar-area.navbar-nine .navbar .navbar-btn .menu-bar:hover {
+.navbar-area.navbar-nine .navbar .navbar-btn:hover .menu-bar {
     border-color: transparent;
     color: var(--primary);
     opacity: 1;
     background-color: var(--white)
 }
 
-/* .navbar-area.navbar-nine.top .navbar .navbar-btn .menu-bar:hover {
-    border-color: transparent;
-    color: var(--white);
-    opacity: 1;
-    background-color: var(--primary)
-} */
 
