@@ -16,24 +16,18 @@
     z-index: 9;
 }
 
-.navbar-area.navbar-nine .navbar-brand-white{
+.navbar-area.navbar-nine .navbar-brand-white,
+.navbar-area.navbar-nine.top .navbar-brand{
     display: block;
-   }
-   
-   .navbar-area.navbar-nine .navbar-brand{
+}
+
+.navbar-area.navbar-nine .navbar-brand,
+.navbar-area.navbar-nine.top .navbar-brand-white{
     display: none;
-   }
+}
 
 .navbar-area.navbar-nine.top {
     background: transparent;
-}
-
-.navbar-area.navbar-nine.top .navbar-brand-white{
- display: none;
-}
-
-.navbar-area.navbar-nine.top .navbar-brand{
- display: block;
 }
 
 .sticky {
@@ -43,13 +37,6 @@
     transition: all .3s ease-out 0s;
     top: 0;
     width: 100%
-}
-
-@media only screen and (min-width:768px) and (max-width:991px),
-(max-width:767px) {
-    .navbar-area.navbar-nine {
-        padding: 10px 0
-    }
 }
 
 .navbar-area.navbar-nine .navbar-brand,
@@ -103,35 +90,12 @@
     top: -7px
 }
 
-@media only screen and (min-width:768px) and (max-width:991px),
-(max-width:767px) {
-    .navbar-area.navbar-nine .navbar .navbar-collapse {
-        position: absolute;
-        top: 116%;
-        left: 0;
-        width: 100%;
-        background-color: var(--primary);
-        z-index: 8;
-        padding: 10px 16px
-    }
-}
-
-@media only screen and (min-width:1200px) and (max-width:1399px),
-only screen and (min-width:1400px) {
-    .navbar-area.navbar-nine .navbar .navbar-nav {
-        margin-left: 80px
-    }
-}
-
-@media only screen and (min-width:768px) and (max-width:991px),
-(max-width:767px) {
-    .navbar-area.navbar-nine .navbar .navbar-nav {
-        margin-right: 0
-    }
-}
-
 .navbar-area.navbar-nine .navbar .navbar-nav .nav-item {
     position: relative
+}
+
+.navbar-area.navbar-nine .navbar .navbar-nav .app-link {
+    display: none;
 }
 
 .navbar-area.navbar-nine .navbar .navbar-nav .nav-item a {
@@ -161,6 +125,64 @@ only screen and (min-width:1400px) {
     opacity: 1
 }
 
+
+@media only screen and (min-width:768px) and (max-width:991px),
+(max-width:767px) {
+    .navbar-area.navbar-nine .navbar .navbar-collapse {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: var(--primary);
+        z-index: 8;
+        padding: 10px 16px;
+    }
+    .navbar-area.navbar-nine.top .navbar .navbar-nav .nav-item a {
+        color: var(--white) ;
+    }
+    .navbar-area.navbar-nine.top {
+        background: var(--primary);
+    }
+    .navbar-area.navbar-nine .navbar-brand-white,
+    .navbar-area.navbar-nine.top .navbar-brand-white,
+    .navbar-area.navbar-nine .navbar .navbar-nav .app-link{
+        display: block;
+    }
+    
+    .navbar-area.navbar-nine .navbar-brand,
+    .navbar-area.navbar-nine.top .navbar-brand{
+        display: none;
+    }
+
+    .navbar-area.navbar-nine .navbar .navbar-nav .app-link a{
+        display: flex;
+        align-items: flex-end;
+    }
+}
+
+
+@media only screen and (min-width:768px) and (max-width:991px),
+(max-width:767px) {
+    .navbar-area.navbar-nine {
+        padding: 10px 0
+    }
+}
+
+@media only screen and (min-width:1200px) and (max-width:1399px),
+only screen and (min-width:1400px) {
+    .navbar-area.navbar-nine .navbar .navbar-nav {
+        margin-left: 80px
+    }
+}
+
+@media only screen and (min-width:768px) and (max-width:991px),
+(max-width:767px) {
+    .navbar-area.navbar-nine .navbar .navbar-nav {
+        margin-right: 0
+    }
+}
+
+
 @media only screen and (min-width:768px) and (max-width:991px),
 (max-width:767px) {
     .navbar-area.navbar-nine .navbar .navbar-nav .nav-item a {
@@ -168,6 +190,11 @@ only screen and (min-width:1400px) {
         display: block;
         border: 0;
         margin: 0
+    }
+
+    .navbar-area.navbar-nine .navbar .navbar-nav .app-link a{
+        display: flex;
+        align-items: flex-end;
     }
 }
 
