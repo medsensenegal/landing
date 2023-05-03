@@ -1,2 +1,1 @@
-# landing
-Medsen Landing page
+# medsen-landing
