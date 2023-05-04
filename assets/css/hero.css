@@ -71,7 +71,7 @@
     justify-content: flex-start;
     flex-direction: row;
     width: 700%;
-    /* animation: slide 15s infinite; */
+    animation: slide 15s infinite;
 }
 
 .hero-slider .hero-slide {
